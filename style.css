@@ -1,0 +1,101 @@
+
+:root {
+    --shadow-color: rgba(132, 139, 200, 0.18);
+    --background-color: #F3F5FC;
+    --color-alura: #0A3871;
+}
+
+*{    
+    background: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    margin: 5px 0rem 0rem 4rem;
+}
+
+img {
+    width: 4rem;
+    padding: 1rem 0 0 0;
+}
+
+.text-Area, .text-Area:focus{
+    padding: 5px;
+    height: 500px;
+    resize: none;
+    border: none;
+    display: flex;
+    color: var(--color-alura);
+    outline: none;
+    text-transform: lowercase;
+    margin: 10px 0 0 30px;
+}
+
+::placeholder {
+    color: var(--color-alura);
+    text-transform: initial;
+}
+
+.info {
+    font-size: 20px;
+    color: gray;
+}
+
+.encriptBtn {
+    background: var(--color-alura);
+    color: white;
+    border: solid 2px var(--color-alura);
+    border-radius: 10px;
+    padding: 5px 1.8rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.desencriptBtn{
+    border: solid 2px var(--color-alura);
+    border-radius: 10px;
+    padding: 5px 1rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    height: 620px;
+    border-radius: 15px;
+    box-shadow: .2rem .2rem 1rem var(--shadow-color);
+}
+
+.mostrar {
+    padding: 1rem;
+    width: 15rem;
+    resize: none;
+    background: white url("imagenes/Muñeco.png") no-repeat center;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}   
+
+::selection {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: var(--color-alura);
+    color: var(--background-color);
+}
+
+.copiar {
+    display: none;
+    padding: 5px 1rem;
+    border: solid 2px var(--color-alura);
+    border-radius: 10px;
+    color: var(--color-alura);
+    cursor: pointer;
+    font-size: 25px;
+    width: 50%;
+    margin-top: 1rem;
+}
